@@ -1,11 +1,13 @@
-package com.designpatterns.iteratorpattern.restaurant_merge;
+package com.designpatterns.iteratorpattern.restaurant_merge.concrete_restaurants;
+
+import com.designpatterns.iteratorpattern.restaurant_merge.domain.MenuItem;
 
 public class DeviLunchPoint {
 
     private MenuItem[] items;
     private int itemSize;
 
-    DeviLunchPoint(int itemSize) {
+    public DeviLunchPoint(int itemSize) {
         items = new MenuItem[itemSize];
     }
 

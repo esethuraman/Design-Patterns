@@ -1,4 +1,4 @@
-package com.designpatterns.iteratorpattern.restaurant_merge;
+package com.designpatterns.iteratorpattern.restaurant_merge.domain;
 
 public class MenuItem {
 
@@ -6,7 +6,7 @@ public class MenuItem {
     private boolean isVeg;
     private float price;
 
-    MenuItem(String name, boolean isVeg, float price) {
+    public MenuItem(String name, boolean isVeg, float price) {
         this.name = name;
         this.isVeg = isVeg;
         this.price = price;

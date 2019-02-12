@@ -1,4 +1,6 @@
-package com.designpatterns.iteratorpattern.restaurant_merge;
+package com.designpatterns.iteratorpattern.restaurant_merge.concrete_restaurants;
+
+import com.designpatterns.iteratorpattern.restaurant_merge.domain.MenuItem;
 
 import java.util.List;
 

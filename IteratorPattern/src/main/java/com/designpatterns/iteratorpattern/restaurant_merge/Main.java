@@ -1,5 +1,11 @@
 package com.designpatterns.iteratorpattern.restaurant_merge;
 
+import com.designpatterns.iteratorpattern.restaurant_merge.concrete_restaurants.AgkDinnerCafe;
+import com.designpatterns.iteratorpattern.restaurant_merge.concrete_restaurants.DeviLunchPoint;
+import com.designpatterns.iteratorpattern.restaurant_merge.hybrid_restaurants.IteratorHybridRestaurant;
+import com.designpatterns.iteratorpattern.restaurant_merge.hybrid_restaurants.NoIteratorHybridRestaurant;
+import com.designpatterns.iteratorpattern.restaurant_merge.domain.MenuItem;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,8 +19,15 @@ public class Main {
         DeviLunchPoint deviLunchPoint = new DeviLunchPoint(5);
         deviLunchPoint.setItems(getLunchItems(5));
 
+        System.out.println("\n\n ******** WITHOUT ITERATOR ******** ");
         NoIteratorHybridRestaurant hybridRestaurant = new NoIteratorHybridRestaurant();
-        hybridRestaurant.printItems(agkDinnerCafe, deviLunchPoint);
+        hybridRestaurant.printItems(deviLunchPoint, agkDinnerCafe);
+        System.out.println("*****************************************");
+
+        System.out.println("\n\n ******** WITH ITERATOR PATTERN ******** ");
+        IteratorHybridRestaurant iteratorHybridRestaurant = new IteratorHybridRestaurant();
+        iteratorHybridRestaurant.printItems(deviLunchPoint, agkDinnerCafe);
+        System.out.println("*****************************************");
     }
 
     private static List<MenuItem> getDinnerItems() {
