@@ -1,8 +1,11 @@
-package com.designpatterns.iteratorpattern.restaurant_merge.concrete_restaurants;
+package com.designpatterns.iteratorpattern.restaurant_merge.simple_restaurants;
 
 import com.designpatterns.iteratorpattern.restaurant_merge.domain.MenuItem;
+import com.designpatterns.iteratorpattern.restaurant_merge.iterators.LunchPointIterator;
 
-public class DeviLunchPoint {
+import java.util.Iterator;
+
+public class DeviLunchPoint implements Restaurant {
 
     private MenuItem[] items;
     private int itemSize;
@@ -19,4 +22,7 @@ public class DeviLunchPoint {
         this.items = items;
     }
 
+    public Iterator getIteraror() {
+        return new LunchPointIterator(this);
+    }
 }

@@ -1,11 +1,12 @@
 package com.designpatterns.iteratorpattern.restaurant_merge.iterators;
 
-import com.designpatterns.iteratorpattern.restaurant_merge.concrete_restaurants.AgkDinnerCafe;
+import com.designpatterns.iteratorpattern.restaurant_merge.simple_restaurants.AgkDinnerCafe;
 import com.designpatterns.iteratorpattern.restaurant_merge.domain.MenuItem;
 
+import java.util.Iterator;
 import java.util.List;
 
-public class DinnerCafeIterator implements MenuItemsIterator {
+public class DinnerCafeIterator implements Iterator {
 
     private List<MenuItem> items;
     private int size;
@@ -23,6 +24,10 @@ public class DinnerCafeIterator implements MenuItemsIterator {
 
     public MenuItem next() {
         return items.get(current++);
+    }
+
+    public void remove() {
+        throw new UnsupportedOperationException();
     }
 
     public int getSize() {

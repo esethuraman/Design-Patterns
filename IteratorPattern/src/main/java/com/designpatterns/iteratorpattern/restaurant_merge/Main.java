@@ -1,7 +1,7 @@
 package com.designpatterns.iteratorpattern.restaurant_merge;
 
-import com.designpatterns.iteratorpattern.restaurant_merge.concrete_restaurants.AgkDinnerCafe;
-import com.designpatterns.iteratorpattern.restaurant_merge.concrete_restaurants.DeviLunchPoint;
+import com.designpatterns.iteratorpattern.restaurant_merge.simple_restaurants.AgkDinnerCafe;
+import com.designpatterns.iteratorpattern.restaurant_merge.simple_restaurants.DeviLunchPoint;
 import com.designpatterns.iteratorpattern.restaurant_merge.hybrid_restaurants.IteratorHybridRestaurant;
 import com.designpatterns.iteratorpattern.restaurant_merge.hybrid_restaurants.NoIteratorHybridRestaurant;
 import com.designpatterns.iteratorpattern.restaurant_merge.domain.MenuItem;
